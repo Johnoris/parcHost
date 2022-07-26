@@ -1,0 +1,82 @@
+
+@function toRem($value) {
+    $remValue: ($value / 16) + rem;	
+    @return $remValue;
+}
+
+.GetInTouch{
+    height: toRem(561);
+    width: toRem(906);
+    border-radius: toRem(61);
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    padding-top: toRem(104);
+    padding-bottom: toRem(50);
+    flex-direction: column;
+    justify-content: space-around;
+    top: 0;
+    bottom: 0;
+    position: fixed;
+    z-index: 4;
+    left: 0;
+    right: 0;
+    margin: auto auto;
+    box-shadow: #000000;
+    @media(max-width: 1240px){
+            height: toRem(550);
+            width: 65%;
+    }
+    @media(max-width: 700px){
+        height: toRem(400);
+        width: 65%;
+        padding-top: toRem(30);
+    }
+    @media (max-width: 500px) {
+        height: toRem(300);
+        padding-bottom: toRem(20);
+    }
+    @media (max-width: 420px) {
+        height: toRem(270);
+    }
+    img{
+        max-width: toRem(210);
+        max-height: toRem(210);
+        margin-bottom: toRem(79);
+        @media (max-width: 700px) {
+            max-width: toRem(100);
+            margin-bottom: 0;
+        }
+        @media (max-width: 400px) {
+            max-width: toRem(70);
+            margin-bottom: 0;
+        }
+    }
+    h3{
+        font-family: Saira;
+        font-size: 30px;
+        font-weight: 400;
+        line-height: 47px;
+        letter-spacing: -0.02em;
+        text-align: center;
+        @media (min-width: 700px) {
+            max-width: toRem(575);
+        }
+        @media (max-width: 600px) {
+            font-size: 24px;
+            line-height: 36px;
+        }
+        @media (max-width: 500px) {
+            font-size: 20px;
+            line-height: 30px;
+        }
+        @media (max-width: 420px) {
+            font-size: 18px;
+            line-height: 25px;
+        }
+        @media (max-width: 350px) {
+            font-size: 14px;
+            line-height: 20px;
+        }
+    }
+}

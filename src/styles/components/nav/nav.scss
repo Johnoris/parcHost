@@ -1,0 +1,43 @@
+//converters
+@function toRem($value) {
+    $remValue: ($value / 16) + rem;	
+    @return $remValue;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: toRem(53);
+    flex-direction: row;
+    height: toRem(62);
+    padding-right: toRem(218);
+    @media (max-width: 670px) {
+        padding-right: 0;
+        justify-content: center;
+    }
+    @media (max-width: 442px) {
+        gap: 10px;
+    }
+    div{
+        display: flex;
+        gap: toRem(13);
+        h4{
+            font-family: Lato;
+            font-size: 18px;
+            font-weight: 600;
+            line-height: 22px;
+            @media (max-width:400px) {
+                font-size: 12px;
+            }
+        }
+        .w-22{
+            width: toRem(22);
+        }
+        .h-20{
+            height: toRem(20.2);
+        }
+        .w-29{
+            width: toRem(29);
+        }
+    }
+}

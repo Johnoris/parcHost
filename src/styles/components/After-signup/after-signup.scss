@@ -1,0 +1,148 @@
+@function toRem($value) {
+    $remValue: ($value / 16) + rem;	
+    @return $remValue;
+}
+.after-signup{
+    .after-signup-top{
+        background-color: #171C49;
+        background-image: url("../../../assets/images/after-sign-up-background-img.png");
+        height: toRem(759);
+        padding-top: toRem(66);
+        .justify-center{
+            display: flex;
+            justify-content: center;
+        }
+        div{
+            h2{
+                font-family: Saira SemiCondensed;
+                font-size: 64px;
+                font-weight: 400;
+                line-height: 101px;
+                letter-spacing: -0.02em;
+                text-align: right;
+                color: #ffffff;
+                max-width: toRem(915);
+                margin-top: toRem(99);
+            }
+            button{
+                background-color: #FA7921;
+                color: #ffffff;
+                width: toRem(313);
+                height: toRem(43);
+                border-radius: toRem(10);
+                margin-top: toRem(46);
+                font-family: Saira;
+                font-size: 18px;
+                font-weight: 500;
+                line-height: 28px;
+                letter-spacing: 0em;
+                text-align: center;
+            }
+        }        
+        .f-left{
+            float: right;
+        }
+        .pdl-148{
+            padding-right: toRem(148);
+        }
+        .align-flex-end{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+        }
+    }
+    .case-study{
+        padding-top: toRem(90);
+        padding-left: toRem(266);
+        padding-right: toRem(206);
+        padding-bottom: toRem(215);
+        h3{
+            font-family: Saira SemiCondensed;
+            font-size: 64px;
+            font-weight: 600;
+            line-height: 101px;
+            letter-spacing: -0.02em;
+            text-align: left;
+            color: #FA7921;
+            margin-bottom: toRem(8);
+        }
+        p{
+            font-family: Saira;
+            font-size: 24px;
+            font-weight: 500;
+            line-height: 38px;
+            letter-spacing: 0em;
+            text-align: justified;
+            color: #585858;
+            margin-top: toRem(30);
+        }
+        .case-study-img-container{
+            p{
+                max-width: toRem(444);
+            }
+        }
+    }
+    .d-flex{
+        display: flex;
+        justify-content: space-between;
+    }
+    .getting-started{
+        background-color: #FA7921;
+        padding-top: toRem(66);
+        padding-left: toRem(265);
+        padding-right: toRem(250);
+        padding-bottom: toRem(90);
+        h4{
+            font-family: Saira SemiCondensed;
+            font-size: 64px;
+            font-weight: 600;
+            line-height: 101px;
+            letter-spacing: -0.02em;
+            text-align: left;
+            color: #ffffff;
+        }
+        p{
+            font-family: Saira SemiCondensed;
+            font-size: 24px;
+            font-weight: 500;
+            line-height: 38px;
+            letter-spacing: -0.02em;
+            text-align: left;
+            color: #ffffff;
+        }
+        form{
+            display: flex;
+            flex-wrap: wrap;
+            gap: toRem(27);
+            max-width: toRem(1125);
+            justify-content: flex-end;
+            margin-top: toRem(43);
+            button{
+                width: toRem(313);
+                height: toRem(42);
+                border-radius: toRem(10);
+                background-color: #171C49;
+                color: #ffffff;
+                align-self: flex-end;
+                margin-right: toRem(136);
+                margin-top: toRem(11);
+            }
+            input{
+                width: toRem(449);
+                height: toRem(42);
+                border-radius: toRem(10);
+                border: none;
+                padding-left: toRem(22);
+            }
+            input::placeholder{
+                font-family: Public Sans;
+                font-size: 14px;
+                font-style: italic;
+                font-weight: 400;
+                line-height: 16px;
+                letter-spacing: 0em;
+                text-align: left;
+            }
+        }
+    }
+}

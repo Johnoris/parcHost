@@ -1,0 +1,217 @@
+//converters
+@function toRem($value) {
+    $remValue: ($value / 16) + rem;	
+    @return $remValue;
+}
+
+main{
+    max-width: toRem(1440);
+    margin: 0 auto;
+    .background-img{
+        background-image: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url(../../assets/images/background-img.png);
+        width: 100%;
+        height: 815px;
+        padding-top: toRem(62);
+    }
+    .bg-blue{
+        background-color: #171C49;
+        padding-top: toRem(130);
+        padding-bottom: toRem(100);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        @media (max-width: 500px) {
+            padding-top: 40px;
+        }
+        h2{
+            font-family: Saira SemiCondensed;
+            font-size: 36px;
+            font-weight: 500;
+            line-height: 57px;
+            letter-spacing: -0.02em;
+            color: #FA7921;
+            max-width: 857px;
+            text-align: center;
+            margin-bottom: toRem(105);
+            @media (max-width: 500px) {
+                font-size: 30px;
+                line-height: 40px;
+                text-align: left;
+                padding-left: 10px;
+            }
+        }
+    }
+    div{
+        .f-right{
+            float: right;
+            max-width: toRem(562);
+            padding-top: toRem(110);
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            margin-right: toRem(64);
+            @media (max-width: 800px) {
+                margin-right: 0;
+            }
+            h3{
+                font-family: Saira SemiCondensed;
+                font-size: 48px;
+                font-weight: 500;
+                line-height: 76px;
+                letter-spacing: -0.02em;
+                text-align: left;
+                color: #ffffff;
+                margin-bottom: toRem(72);
+                @media (max-width:600px) {
+                    text-align: center;
+                }
+                @media (max-width:500px) {
+                    font-size: 40px;
+                    line-height: 60px;
+                }
+            }
+            button{
+                height: toRem(43);
+                width: toRem(299);
+                border-radius: toRem(10);
+                background-color: #FA7921;
+                color: #ffffff;
+                font-family: Saira;
+                font-size: 18px;
+                font-weight: 500;
+                line-height: 28px;
+                border: none;
+                @media (max-width:800px) {
+                    margin: 0 auto;
+                }
+            }
+        }
+    }
+    .d-flex{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .center{
+        justify-content: center;
+    }
+    .f-wrap{
+        flex-wrap: wrap;
+    }
+    .g-160{
+        gap: toRem(160);
+        @media (max-width:700px) {
+            gap: toRem(80)
+        }
+    }
+    .mw-736{
+        max-width: 56.6rem;
+    }
+    .bg-orange{
+        background-color: #FA7921;
+        padding-left: toRem(253);
+        padding-top: toRem(109);
+        padding-bottom: toRem(122);
+        @media (max-width:1200px) {
+            padding-left: toRem(100);
+        }
+        @media (max-width:550px) {
+            padding-left: toRem(40);
+        }
+        h3{
+            font-family: Saira SemiCondensed;
+            font-size: 48px;
+            font-weight: 600;
+            line-height: 76px;
+            letter-spacing: -0.02em;
+            text-align: left;
+            color: #ffffff;
+            margin-bottom: toRem(40);
+            @media (max-width: 550px) {
+                font-size: 33px;
+            }
+            @media (max-width:410px) {
+                font-size: 26px;
+            }
+        }
+        div{
+            .types{
+                height: toRem(299);
+                width: toRem(450);
+                border-radius: toRem(31);
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                margin-bottom: toRem(89);
+                @media (max-width: 500px) {
+                    width: toRem(300);
+                    height: toRem(240);
+                }
+                @media (max-width: 350px) {
+                    width: toRem(250);
+                    height: toRem(240);
+                }
+                p{
+                    font-family: Saira SemiCondensed;
+                    font-size: 24px;
+                    font-weight: 500;
+                    line-height: 38px;
+                    letter-spacing: -0.02em;
+                    text-align: center;
+                    color: #FA7921;
+                    max-width: toRem(177);
+                    margin-top: toRem(38);
+                }
+            }
+            div{
+                background-color: #ffffff;
+            }
+        }
+        .g-31{
+            gap: toRem(31);
+        }
+        .h-55{
+            height: toRem(55)!important;
+        }
+        .email-submit{
+            background-color: #ffffff;
+            height: toRem(77);
+            width: toRem(654);
+            border-radius: toRem(32);
+            display: flex;
+            align-items: center;
+            margin-left: toRem(126);
+            @media (max-width: 1030px) {
+                margin-left: 0;
+            }
+            @media (max-width: 800px) {
+                width: 80%;
+                height: toRem(60);
+            }
+            @media (max-width: 650px) {
+                    height: toRem(40);
+            }
+            input{
+                outline: none;
+                border: none;
+                width: 88.5%;
+                height: 100%;
+                border-radius: toRem(32);
+                padding-left: 30px;
+                font-size: 30px;
+                font-weight: 500;
+                @media (max-width: 767px) {
+                    font-size: 20px;
+                }
+            }
+            img{
+                width: toRem(59);
+                height: toRem(51);
+                @media (max-width: 650px) {
+                    height: toRem(30);
+                    width: auto;
+            }
+            }
+        }
+    }
+}

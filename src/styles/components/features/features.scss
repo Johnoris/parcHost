@@ -1,0 +1,25 @@
+//converters
+@function toRem($value) {
+    $remValue: ($value / 16) + rem;	
+    @return $remValue;
+}
+
+
+.features{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: toRem(250);
+    .features-img-container{
+        height: toRem(135);
+    }
+    h5{
+    font-family: Saira;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 28px;
+    color: #ffffff;
+    max-width: toRem(169);
+    text-align: center;
+    }
+}
